@@ -94,7 +94,7 @@ const PlayScreen = () => {
   const [acceleration, setAcceleration] = useState({ x: 0, y: 0, z: 0 });
   useEffect(() => {
     console.log("joining game");
-    io.emit("join", "game");
+    io.emit("join", "game1");
   }, []);
 
   const [details, setDetails] = useState({
@@ -181,7 +181,7 @@ const PlayScreen = () => {
           <h1 className="text-3xl text-black font-bold">{details.name}</h1>
           <button
             onClick={() => {
-              io.emit("message", "game", {
+              io.emit("message", "game1", {
                 shoot: false,
                 exit: true,
               });

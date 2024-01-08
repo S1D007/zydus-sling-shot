@@ -54,7 +54,7 @@ export default function GameScreen() {
     }
   }, []);
   useEffect(() => {
-    if (score === 2000) {
+    if (score === 2200) {
       handleOnTimerEnd();
     }
   }, [score])
@@ -63,7 +63,7 @@ export default function GameScreen() {
   // function for timer end :: route to score card
   const handleOnTimerEnd = () => {
     router.push(`/scorecard?score=${score}&time=${time}&mode=${mode}&name=${name}`);
-    socket.emit("message", "game", {
+    socket.emit("message", "game1", {
       score,
     })
   };
