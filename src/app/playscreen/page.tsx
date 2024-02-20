@@ -141,58 +141,7 @@ const PlayScreen = () => {
   return (
     <div className="flex flex-col items-center justify-center h-full w-[80%] max-w-[50rem] m-auto space-y-2">
       <BgImage />
-      {/* <img src="/logo.png" className="max-h-[10rem]" alt="logo" /> */}
-      {!isJoined && (
-        <>
-          <input
-            type="text"
-            className="z-50 w-[90%] h-10 rounded-md border border-gray-600 px-2"
-            placeholder="Name"
-            value={details.name}
-            onChange={(e) => setDetails({ ...details, name: e.target.value })}
-          />
-          <button
-            onClick={async () => {
-              if (details.name) {
-                // io.emit("join", "game", {
-                //   name: details.name,
-                //   shoot: false,
-                // });
-                // await axios.post(
-                //   "https://api.gokapturehub.com/apexfer/add",
-                //   details
-                // );
-                setIsJoined(true);
-              } else {
-                alert("Please fill all the fields");
-              }
-            }}
-            className="z-50 w-[80%] h-10 rounded-md bg-pink-500 text-white"
-          >
-            Join
-          </button>
-        </>
-      )}
-      {isJoined && (
-        <div className="flex flex-col justify-center items-center space-y-2 z-50">
-          <h1 className="text-4xl text-black font-black text-center">
-            Welcome to the Game,
-          </h1>
-          <h1 className="text-3xl text-black font-bold">{details.name}</h1>
-          <button
-            onClick={() => {
-              io.emit("message", "game1", {
-                shoot: false,
-                exit: true,
-              });
-              setIsJoined(false);
-            }}
-            className="w-[80%] h-10 rounded-md bg-red-500 text-white text-lg font-bold"
-          >
-            Exit
-          </button>
-        </div>
-      )}
+      <img src="/logo.png" className="max-h-[10rem]" alt="logo" />
     </div>
   );
 };

@@ -169,7 +169,7 @@ export default function GameScreen() {
     <main className={styles.main_continer}>
       <BgImage />
       <nav className={styles.nav}>
-        {/* <img src="/logo.png" alt="logo" /> */}
+        <img src="/logo.png" alt="logo" />
         {/* <div className="bg-red-600 p-2 rounded-md text-white text-center font-bold text-3xl uppercase  transform mt-auto">
           symptoms of anemia
         </div> */}
