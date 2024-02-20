@@ -141,7 +141,7 @@ const PlayScreen = () => {
   return (
     <div className="flex flex-col items-center justify-center h-full w-[80%] max-w-[50rem] m-auto space-y-2">
       <BgImage />
-      <img src="/logo.png" className="max-h-[10rem]" alt="logo" />
+      {/* <img src="/logo.png" className="max-h-[10rem]" alt="logo" /> */}
       {!isJoined && (
         <>
           <input

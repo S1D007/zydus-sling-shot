@@ -20,7 +20,7 @@ const MovingDiv = forwardRef(
       initx = 0,
       inity = 0,
       alt = "img",
-      imgSrc = "https://static.vecteezy.com/system/resources/previews/013/760/383/original/virus-isolated-transparent-free-png.png"
+      imgSrc = "https://static.vecteezy.com/system/resources/previews/013/760/383/original/medicine-isolated-transparent-free-png.png"
     }: any,
     ref: any
   ) => {
@@ -101,7 +101,7 @@ export default MovingDiv;
 export const Posarr = [
   {
     alt: "lulibet",
-    imgSrc: "/virus/lulibet.png",
+    imgSrc: "/medicine/1.png",
     initX: 50,
     inity: 50,
     duration: 4,
@@ -118,7 +118,7 @@ export const Posarr = [
   },
   {
     alt: "lulican",
-    imgSrc: "/virus/lulican.png",
+    imgSrc: "/medicine/2.png",
     initX: 20,
     inity: 50,
     duration: 3,
@@ -135,7 +135,7 @@ export const Posarr = [
   },
   {
     alt: "lulifin",
-    imgSrc: "/virus/lulifin.png",
+    imgSrc: "/medicine/3.png",
     initX: 90,
     inity: 80,
     duration: 3,
@@ -152,7 +152,7 @@ export const Posarr = [
   },
   {
     alt: "nafbor",
-    imgSrc: "/virus/nafbor.png",
+    imgSrc: "/medicine/4.png",
     duration: 4,
     x1: 20,
     y1: 10,
@@ -167,7 +167,7 @@ export const Posarr = [
   },
   {
     alt: "nafticross",
-    imgSrc: "/virus/nafticross.png",
+    imgSrc: "/medicine/5.png",
     duration: 4,
     x1: 0,
     y1: 10,
@@ -179,26 +179,9 @@ export const Posarr = [
     y4: 70,
     isBrust: false,
     score: 400,
-  },
-  {
-    alt:"ninaf",
-    imgSrc: "/virus/ninaf.png",
-    initX: 50,
-    inity: 50,
-    duration: 5,
-    x1: 20,
-    y1: 10,
-    x2: 60,
-    y2: 80,
-    x3: 60,
-    y3: 60,
-    x4: 60,
-    y4: 10,
-    isBrust: false,
-    score: 200,
-  },
+  }
   // {
-  //   imgSrc: "/virus/3.png",
+  //   imgSrc: "/medicine/3.png",
   //   initX: 50,
   //   inity: 50,
   //   duration: 2,
@@ -214,7 +197,7 @@ export const Posarr = [
   //   score: 5,
   // },
   // {
-  //   imgSrc: "/virus/6.png",
+  //   imgSrc: "/medicine/6.png",
   //   initX: 50,
   //   inity: 50,
   //   duration: 2,

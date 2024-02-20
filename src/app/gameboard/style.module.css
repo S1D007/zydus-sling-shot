@@ -6,10 +6,10 @@
 .shootIcon {
     position: absolute;
     /* top: 40%; */
-    top: calc(30% - 4rem);
+    top: calc(50% - 4rem);
     right: 50%;
     transform: translate(50%, 50%);
-    width: 10rem;
+    width: 5rem;
     z-index: 100;
 }
 
