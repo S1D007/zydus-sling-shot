@@ -19,7 +19,7 @@ export default function Scorecard() {
   const clapSound = useRef<any>(new Audio("/music/clapp.mp3"));
 
   useEffect(() => {
-    if (score && Number(score) > 0) {
+    if (score && Number(score) === 1000) {
       clapSound.current.play();
       setShowConfetti(true);
     }
@@ -60,7 +60,7 @@ export default function Scorecard() {
           <h1 className="text-5xl capitalize font-semibold">{score}</h1>
           {score && Number(score) < 500 && (
             <h1 className="text-xl capitalize font-medium">
-              Better Luck Next time 🥹
+              Better Luck Next time
             </h1>
           )}
           <img src="/virus/shootIcon.png" alt="shoot" />

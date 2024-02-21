@@ -54,7 +54,7 @@ export default function GameScreen() {
     }
   }, []);
   useEffect(() => {
-    if (score === 500) {
+    if (score === 1000) {
       handleOnTimerEnd();
     }
   }, [score])
