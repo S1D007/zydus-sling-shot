@@ -70,6 +70,7 @@ const StartForm = () => {
       <main className="z-10 w-full max-w-[28rem] p-4 py-10 md:p-10 bg-opacity-20 backdrop-blur-md rounded bg-black flex flex-col gap-8 items-center justify-center text-xl md:bg-white md:bg-opacity-100 shadow-xl relative">
         <p className="text-3xl font-semibold">Start Game </p>
         <select
+        value={mode}
           className="bg-gray-100 w-full text-gray-800 border-0 rounded-md p-5 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 capitalize"
           id="product"
           onChange={(e) => {
