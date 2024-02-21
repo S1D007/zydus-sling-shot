@@ -3,18 +3,16 @@ import BgImage from "@/component/BgImage";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
-import style from "./home.module.css"
+import style from "./home.module.css";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import Throttle from "@/lib/Throttle";
 
 export default function Home() {
-
   return (
     <div
       className="flex flex-col gap-10 items-center justify-center h-full w-full
      md:flex-row p-5 bg-red-50"
     >
-
       {/* <BgImage /> */}
       {/* <div className='absolute md:relative' >
         <img src="/logo.png" className='w-[90%] max-w-[40rem]' alt="img" />
@@ -31,10 +29,10 @@ export default function Home() {
 const StartForm = () => {
   const router = useRouter();
   const [player, setplayer] = useState("");
-  const [mode, setmode] = useState("slow");
+  const [mode, setmode] = useState("medium");
   const [time, setTime] = useState("30");
-  const [showTimer, setshowTimer] = useState(false)
-  const [timeEr, settimeEr] = useState(3)
+  const [showTimer, setshowTimer] = useState(false);
+  const [timeEr, settimeEr] = useState(3);
   // useEffect(() => {
   //   let interval = setInterval(()=>{settimeEr((e)=>e+1)}, 1000);
   //   return () => {
@@ -53,8 +51,10 @@ const StartForm = () => {
   const handleStart = () => {
     try {
       if (time.length > 0) {
-        setshowTimer(true)
-        setInterval(() => { settimeEr((e) => e - 1) }, 1000);
+        setshowTimer(true);
+        setInterval(() => {
+          settimeEr((e) => e - 1);
+        }, 1000);
         setTimeout(() => {
           router.push(`/gameboard?mode=${mode}&time=${+time}`);
         }, 3000);
@@ -62,7 +62,7 @@ const StartForm = () => {
     } catch (error) {
       window.location.reload();
     }
-  }
+  };
 
   return (
     <>
@@ -100,10 +100,7 @@ const StartForm = () => {
           <br /> * time is must be in number <br />* time is in second
         </p>
 
-        <button
-          className="start-btn"
-          onClick={Throttle(handleStart , 3000)}
-        >
+        <button className="start-btn" onClick={Throttle(handleStart, 3000)}>
           start
         </button>
       </main>
