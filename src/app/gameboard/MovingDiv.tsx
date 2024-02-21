@@ -114,7 +114,7 @@ export const Posarr = [
     x4: 0,
     y4: 10,
     isBrust: false,
-    score: 600,
+    score: 100,
   },
   {
     alt: "lulican",
@@ -131,7 +131,7 @@ export const Posarr = [
     x4: 0,
     y4: 100,
     isBrust: false,
-    score: 400,
+    score: 100,
   },
   {
     alt: "lulifin",
@@ -148,7 +148,7 @@ export const Posarr = [
     x4: 10,
     y4: 10,
     isBrust: false,
-    score: 300,
+    score: 100,
   },
   {
     alt: "nafbor",
@@ -163,7 +163,7 @@ export const Posarr = [
     x4: 60,
     y4: 10,
     isBrust: false,
-    score: 300,
+    score: 100,
   },
   {
     alt: "nafticross",
@@ -178,7 +178,7 @@ export const Posarr = [
     x4: 60,
     y4: 70,
     isBrust: false,
-    score: 400,
+    score: 100,
   }
   // {
   //   imgSrc: "/medicine/3.png",

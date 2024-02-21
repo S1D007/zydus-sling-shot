@@ -21,9 +21,9 @@ export default function Scorecard() {
   useEffect(() => {
     if (score && Number(score) > 0) {
       clapSound.current.play();
-      setShowConfetti(true)
+      setShowConfetti(true);
     }
-  },[])
+  }, []);
 
   return (
     <main className="flex flex-col items-center justify-center h-[100vh]">
@@ -33,8 +33,8 @@ export default function Scorecard() {
         autoPlay
         controls
       ></audio> */}
-      {
-        showConfetti && <Confetti
+      {showConfetti && (
+        <Confetti
           width={windowWidth}
           height={windowHeight}
           recycle={false}
@@ -43,7 +43,7 @@ export default function Scorecard() {
             setShowConfetti(false);
           }}
         />
-      }
+      )}
       <BgImage />
       {/* <p className={style.textT}>
         To Treat anemia <br /> without side effects
@@ -57,6 +57,11 @@ export default function Scorecard() {
           <h1 className="text-xl capitalize font-semibold">
             {name} You Scored
           </h1>
+          {score && Number(score) < 500 && (
+            <h1 className="text-5xl capitalize font-semibold">
+              Better Luck Next time
+            </h1>
+          )}
           <h1 className="text-5xl capitalize font-semibold">{score}</h1>
           <img src="/virus/shootIcon.png" alt="shoot" />
           <div className={style.btns}>

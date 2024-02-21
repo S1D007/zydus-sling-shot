@@ -32,7 +32,7 @@ const StartForm = () => {
   const router = useRouter();
   const [player, setplayer] = useState("");
   const [mode, setmode] = useState("slow");
-  const [time, setTime] = useState("60");
+  const [time, setTime] = useState("30");
   const [showTimer, setshowTimer] = useState(false)
   const [timeEr, settimeEr] = useState(3)
   // useEffect(() => {
